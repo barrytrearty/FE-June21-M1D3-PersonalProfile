@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background image implemented */
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Computer_keyboard.png);
@@ -17,14 +21,9 @@ body {
   overflow: auto;
 }
 
-@media (min-width: 750px) {
-  body {
-    font-size: 2rem;
-  }
-}
-
 a {
   color: black;
+  text-decoration: none;
 }
 
 header {
@@ -33,7 +32,29 @@ header {
   color: white;
   background-color: rgba(1, 8, 5, 0.7);
   padding: 50px;
-  padding-top: 10px;
+  padding-top: 20vh;
+}
+
+.navbar {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+.navbar ul {
+  width: 100%;
+  padding-top: 1vh;
+  margin-top: 0%;
+  /* margin: auto; */
+  position: fixed;
+  background-color: rgba(59, 129, 99, 0.7);
+}
+
+.navbar ul li {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: inline;
+  color: white;
 }
 
 .sectionsHeader {
@@ -84,8 +105,8 @@ img {
 
 section {
   height: 100vh;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 
 .firstSection {
@@ -132,4 +153,18 @@ footer ul li {
 
 footer a {
   text-decoration: none;
+}
+
+@media (min-width: 750px) {
+  body {
+    font-size: 2rem;
+  }
+
+  footer ul {
+    width: 1000px;
+  }
+
+  .sectionsHeader {
+    width: 1000px;
+  }
 }
