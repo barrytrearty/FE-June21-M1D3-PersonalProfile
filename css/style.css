@@ -1,0 +1,125 @@
+body {
+  /* background image implemented */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Computer_keyboard.png);
+  background-size: cover; /*
+  background-repeat: no-repeat;
+  position: relative; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* position: fixed; */
+  /*--------------------*/
+  text-align: center;
+  color: black;
+  font: normal 1em monospace, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+  overflow: auto;
+}
+
+a {
+  color: black;
+}
+
+header {
+  height: 100vh;
+  /* height: 25rem; */
+  color: white;
+  background-color: rgba(1, 8, 5, 0.7);
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.sectionsHeader {
+  display: flex;
+  margin: auto;
+  max-width: 700px;
+}
+
+header .firstHeaderSect {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+  /* justify-content: flex-start; */
+  /* align-content: space-around; */
+}
+
+header .secondHeaderSect {
+  flex: 1;
+  /* justify-content: flex-end; */
+  align-self: center;
+  margin: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+h1 {
+  text-shadow: 1px 1px #a0a0a0;
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* display: inline-block; */
+  width: 200px;
+  height: auto;
+  /* float: left; */
+  border-radius: 40%;
+}
+
+section {
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .listContainer {
+  position:
+  max-width: 700px;
+  text-align: left;
+} */
+
+section:nth-child(even) {
+  background-color: rgba(1, 8, 5, 0.7);
+  color: white;
+}
+
+section:nth-child(odd) {
+  background-color: rgb(248, 240, 240, 0.7);
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: rgba(1, 8, 5, 0.7);
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+footer ul li {
+  padding: 10px;
+  display: inline;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
